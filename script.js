@@ -44,11 +44,11 @@ const draw = (e) => {
 
   // get the position relative to the canvas based on the event type
   const x =
-    e.type === "mousedown" || e.type === "mousemove"
+    e.type === "mousedown" || e.type === "mousemove" || e.type === "mouseup"
       ? e.clientX - canvasOffsetX
       : e.touches[0].clientX - canvasOffsetX;
   const y =
-    e.type === "mousedown" || e.type === "mousemove"
+    e.type === "mousedown" || e.type === "mousemove" || e.type === "mouseup"
       ? e.clientY - canvasOffsetY
       : e.touches[0].clientY - canvasOffsetY;
 
